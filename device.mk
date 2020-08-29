@@ -18,12 +18,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_11811.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_11811.xml \
     $(LOCAL_PATH)/audio/mixer_paths_pahu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_pahu.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
+    $(LOCAL_PATH)/prebuilt/etc/sysconfig/oem_whitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/oem_whitelist.xml
 
 # Camera
 PRODUCT_PACKAGES += \
     vendor.lineage.camera.motor@1.0 \
     vendor.lineage.camera.motor@1.0-service.oneplus_msmnile \
-    OnePlusCameraHelper
+    OnePlusCameraHelper \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OPCameraResources
 
 # Device init scripts
 PRODUCT_PACKAGES += \
